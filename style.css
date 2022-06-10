@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  background-color: #f9bf2d;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  margin-top: 10px;
+  position: relative;
+  top: 60px;
+  font-size: 3.125rem;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.cards {
+  width: 21.125rem;
+  background-color: #222c85;
+  height: 18.75rem;
+  border-radius: 50px 50px 50px 50px;
+  filter: drop-shadow(0px 4px 4px #000);
+  text-align: center;
+  line-height: 18.75rem;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+}
