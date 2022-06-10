@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: red;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 2rem;
+  font-family: "Muli";
+  color: #242e4c;
+  text-decoration: none;
+}
+
+h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 + p {
+  text-align: center;
+  opacity: 0.5;
+  margin-bottom: 10px;
+}
+
+p {
+  background-color: inherit;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.main-container {
+  width: 887px;
+  height: 661px;
+  filter: drop-shadow(0px 4px 4px black);
+  background-color: #fff;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  background-color: white;
+  width: 723px;
+  height: 497px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.imageContainer {
+  display: inline;
+  background-color: inherit;
+}
+
+.textContainer {
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.roundedCorners {
+  border-radius: 20px;
+  background-color: #191847;
+  display: inline-block;
+  width: 113px;
+  height: 29px;
+  line-height: 29px;
+  padding: 4px 8px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.productName {
+  font-size: 24px;
+  color: #191847;
+  margin-bottom: 32px;
+}
+
+.priceBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: inherit;
+  margin-bottom: 30px;
+}
+
+.lineThroughText {
+  font-family: "Roboto", sans-serif;
+  text-decoration: line-through;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.currentPrice {
+  font-size: 48px;
+  color: #191847;
+  font-weight: 700;
+}
+
+.offerPara {
+  color: #86859f;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.addToCart {
+  background-color: #4788e9;
+  color: white;
+  width: 442px;
+  height: 59px;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 8px;
+  filter: drop-shadow(0px 7px 0px #1c57ee);
+  border: none;
+  margin-bottom: 30px;
+}
+
+.dot {
+  width: 13px;
+  height: 13px;
+  background-color: #00d98b;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.stockAvailable {
+  margin-top: -5px;
+  font-weight: 500;
+}
+
+.dotContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: inherit;
+  margin-bottom: 30px;
+}
+
+.cartButtonsContainer {
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn1 {
+  height: 64px;
+  width: 213px;
+  color: #191847;
+  background-color: inherit;
+  font-size: 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: solid #c9c9da;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.iconImg {
+  height: 32px;
+  width: 32px;
+  margin-right: 2px;
+  background-color: inherit;
+}
+
+.text {
+  background-color: inherit;
+}
