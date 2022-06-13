@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-*,
-*:before,
-*:after {
+
+* {
+  box-sizing: border-box;
+}
+
+body {
   margin: 1.5em;
   font-family: "Poppins", sans-serif;
-  padding: 0;
 }
 
 a {
@@ -23,6 +25,7 @@ a {
   background-size: cover;
   background-position-x: 20%;
   overflow: hidden;
+  animation: introLoad 3s forwards;
 }
 
 .logo {
@@ -36,8 +39,11 @@ nav {
   top: 0;
   height: 100vh;
   width: 50%;
-  z-index: 3;
+  z-index: 999;
   text-transform: uppercase;
+  background: #fff;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
 
   ul {
     list-style-type: none;
@@ -50,10 +56,16 @@ nav {
       width: 100%;
 
       &:hover {
-        background-color: gray;
+        background: rgb(243, 240, 240);
       }
     }
   }
+}
+
+.close {
+  float: right;
+  margin: 2em;
+  width: 2.5em;
 }
 
 header {
@@ -70,12 +82,15 @@ header {
 .hero {
   color: #fff;
   height: 90vh;
+  animation: moveDown 1s ease-in-out forwards;
+  opacity: 0;
 
   .down-arrow {
     stroke: #fff;
     position: absolute;
     bottom: 2em;
     width: 1em;
+    animation: moveArrow 1s alternate-reverse infinite;
 
     path {
       fill: #fff;
@@ -85,7 +100,6 @@ header {
 
 h1 {
   font-size: 3rem;
-  margin-top: 2em;
   line-height: 3.3rem;
 }
 
@@ -93,5 +107,156 @@ h1 {
   font-size: 1.4rem;
 }
 
-na {
+.more-info {
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 11em;
+  }
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.desc {
+  line-height: 1.5rem;
+}
+
+.open-nav {
+  transform: translateX(0);
+}
+@media only screen and (min-width: 680px) {
+  body {
+    margin: 1.5em 5em;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .menu {
+    display: none;
+  }
+
+  nav {
+    transform: translateX(0);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+
+    svg.close {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+      margin: 0;
+
+      a {
+        color: #fff;
+        padding: 0.5em 1.5em;
+        font-size: 0.9rem;
+
+        &:hover {
+          background: none;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .hero-img {
+    left: unset;
+    right: 0;
+    width: 50%;
+    height: 42em;
+  }
+
+  .logo {
+    color: black;
+
+    span {
+      color: red;
+    }
+  }
+
+  section.hero {
+    color: #000;
+    height: auto;
+    width: 40%;
+    margin: 8em 0em;
+
+    svg.down-arrow {
+      stroke: black;
+      position: unset;
+
+      path {
+        fill: black;
+      }
+    }
+  }
+
+  .feature {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin-bottom: 8em;
+
+    img {
+      width: 25em;
+    }
+
+    .content {
+      text-align: right;
+      width: 25em;
+    }
+  }
+
+  .feature.left {
+    grid-template-areas: "left right";
+    img {
+      grid-area: left;
+    }
+
+    .content {
+      text-align: left;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@keyframes introLoad {
+  from {
+    clip-path: polygon(0 0, 100% 0, 48% 100%, 49% 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes moveArrow {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
