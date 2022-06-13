@@ -3,7 +3,7 @@
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #f9bf2d;
 }
 
