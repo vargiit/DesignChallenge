@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: lightcoral;
+  font-family: "Lato", sans-serif;
+}
+
+:root {
+  --colour-white: #fff;
+  --colour-orange: #ff9b04;
+  --colour-textgrey: #d0d0d0;
+  --colour-ratings: #dc3a1a;
+  --colour-dark-grey: #c2c2c2;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 25rem;
+  background-color: var(--colour-white);
+  filter: drop-shadow(0px 4px 4px #000);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.label {
+  width: 6rem;
+  display: inline-block;
+  color: var(--colour-white);
+  text-align: center;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  background-color: var(--colour-orange);
+  padding: 0.5em;
+  margin: 0;
+}
+
+.top-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon-sizing {
+  height: 32px;
+  width: 32px;
+}
+
+i .fa-regular,
+.fa-heart,
+.fa-2xl,
+.icon-sizing {
+  font-size: 2em;
+  margin: 0.5em;
+}
+
+.product-image {
+  width: 100%;
+}
+
+p {
+  margin: 1em 0;
+}
+
+#scratched-text {
+  text-decoration: line-through;
+  color: var(--colour-textgrey);
+  font-size: 1.5em;
+}
+
+#product-price {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+ul {
+  list-style-position: inside;
+}
+.contents {
+  margin: 0.5em;
+}
+
+span {
+  margin-right: 0.5em;
+}
+
+.ratings {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.inline {
+  margin-right: 0.5em;
+  font-weight: 700;
+}
+
+.inline:nth-child(2) {
+  color: var(--colour-ratings);
+}
+
+.inline:nth-child(3) {
+  color: var(--colour-dark-grey);
+}
