@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Press Start 2P", cursive;
+}
+
+:root {
+  --colour-primary: #566fff;
+  --colour-black: #000;
+  --colour-white: #fff;
+  --colour-shadow: rgba(0, 4, 52, 0.2);
+  --colour-border: #bdbdbf;
+  --colour-heading: #181a34;
+  --colour-p: #50526b;
+}
+
+body {
+  background-color: var(--colour-primary);
+}
+
+.container {
+  background-color: var(--colour-white);
+  position: absolute;
+  width: 95vw;
+  max-width: 31.25em;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  padding: 3.5em 2.5em;
+  border-radius: 0.6em;
+  box-shadow: 0 1.2em 3em var(--colour-shadow);
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+input,
+button {
+  font-size: 1.25em;
+  /* outline: none; */
+  border: none;
+  border-radius: 0.4em;
+}
+
+input {
+  width: 40%;
+  border: 1px solid var(--colour-border);
+  padding: 0.6em;
+}
+
+button {
+  width: 55%;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.7em;
+  font-weight: 500;
+  background: var(--colour-primary);
+}
+
+#ran-fact-btn {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.fact {
+  box-shadow: 0 1.2em 3em var(--colour-shadow);
+  margin-top: 3em;
+  padding: 2.8em 1.8em;
+  border-radius: 0.6em;
+  border-bottom: 0.6em solid var(--colour-primary);
+  display: none;
+}
+
+.fact h2 {
+  font-size: 2.8em;
+  color: var(--colour-heading);
+}
+
+.fact p {
+  font-size: 1.15em;
+  color: var(--colour-p);
+  line-height: 1.2em;
+  text-align: justify;
+  margin-top: 0.8em;
+}

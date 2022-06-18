@@ -63,10 +63,6 @@ i .fa-regular,
   margin: 0.5em;
 }
 
-.product-image {
-  width: 100%;
-}
-
 p {
   margin: 0.5em 0;
 }
@@ -212,4 +208,38 @@ p.delivery-info strong {
 
 .icon-sizing:nth-child(2) {
   transform: rotate(45deg);
+}
+
+.product-image {
+  width: 368px;
+  height: 268px;
+  margin: 2px;
+}
+
+.product-wrapper {
+  width: 400px;
+  display: flex;
+}
+
+.display-area {
+  width: 368px;
+  overflow-x: hidden;
+  border: 1px;
+}
+
+.dots-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.dot {
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  border-radius: 50%;
+  outline: none;
+  padding: 0%;
 }
