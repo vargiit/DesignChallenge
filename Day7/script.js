@@ -4,16 +4,17 @@ const fact = document.querySelector(".fact");
 const url = "http://numbersapi.com/";
 const container = document.getElementsByClassName("container");
 
-let fetchUrl = (num) => {
+let fetchUrl = async (num) => {
   let finalUrl = url + num;
-  fetch(finalUrl)
-    .then((resp) => resp.text())
-    .then((data) => {
-      fact.style.display = "block";
-      fact.innerHTML = `<h2>${num}</h2>
-        <p>${data}</p>`;
-      //   container.append(fact);
-    });
+  const resp = await fetch(finalUrl);
+  const data = await resp.text();
+  // .then((resp) => resp.text())
+  // .then((data) => {
+  fact.style.display = "block";
+  fact.innerHTML = `<h2>${num}</h2>
+      <p>${data}</p>`;
+  //   container.append(fact);
+  // });
 };
 
 let getFact = () => {
