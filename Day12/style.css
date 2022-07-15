@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    79deg,
+    rgba(255, 47, 0, 1) 0%,
+    rgba(255, 163, 48, 1) 100%
+  );
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+}
+#new-task-form {
+  display: flex;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 39rem;
+}
+h1 {
+  color: white;
+  margin: 2em 0em;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+input {
+  border: none;
+  width: 35em;
+  outline: none;
+  height: 3em;
+  padding: 2em;
+}
+
+span {
+  width: 3em;
+  height: 3.35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addition {
+  background: #e9993d;
+  color: white;
+}
+
+.deletion {
+  background: #ec2c2c;
+  color: white;
+}
+
+li {
+  background: #fff;
+  list-style: none;
+  padding: 15px;
+  width: 50%;
+  margin: 0px auto 2px auto;
+  display: inline-block;
+}
+
+.deletele {
+  display: inline-block;
+  background: #ec2c2c;
+  color: white;
+  height: 49px;
+}
+
+.deletele i {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+}
+
+.edit {
+  background: blue;
+  color: white;
+  height: 49px;
+  display: inline-block;
+}
+
+.edit i {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+}
+
+.correct {
+  background: green;
+  color: white;
+  height: 49px;
+  display: inline-block;
+}
+
+.correct i {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+}
+
+.spacing {
+  margin-top: 5px;
+  height: 29px;
+  display: inline-block;
+  padding: 24.5px;
+  position: relative;
+  top: -0.8px;
+}
+
+.down-border {
+  border-bottom: 2px solid white;
+  display: inline;
+}

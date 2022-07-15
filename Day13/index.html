@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calculator-grid">
+      <div class="output">
+        <input type="text" id="inputext" placeholder="0" />
+      </div>
+      <button onclick="ac()" class="span-two">AC</button>
+      <button onclick="del()" data-delete>DEL</button>
+      <button onclick="calculate('÷')" data-operation>÷</button>
+      <button onclick="calculate(1)" data-number>1</button>
+      <button onclick="calculate(2)" data-number>2</button>
+      <button onclick="calculate(3)" data-number>3</button>
+      <button onclick="calculate('/')" data-operation>/</button>
+      <button onclick="calculate(4)" data-number>4</button>
+      <button onclick="calculate(5)" data-number>5</button>
+      <button onclick="calculate(6)" data-number>6</button>
+      <button onclick="calculate('+')" data-operation>+</button>
+      <button onclick="calculate(7)" data-number>7</button>
+      <button onclick="calculate(8)" data-number>8</button>
+      <button onclick="calculate(9)" data-number>9</button>
+      <button onclick="calculate('-')" data-operation>-</button>
+      <button onclick="calculate('.')" data-number>.</button>
+      <button onclick="calculate(0)" data-number>0</button>
+      <button onclick="Result()" data-equals class="span-two">=</button>
+    </div>
+  </body>
+</html>

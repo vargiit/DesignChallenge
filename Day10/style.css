@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+@font-face  {
+  font-family: forH1;
+  src: url(/assets/fonts/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2);
+}
+
+body {
+  font-family: Merriweather, Georgia, serif;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/assets/images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.wrapper {
+  /* position: relative;
+  top: 150px; */
+  color: #fff;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 4rem 6rem 4rem;
+}
+
+h1 {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 5em;
+  text-align: center;
+  max-width: 40%;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.075em;
+}
+
+.wrapper p {
+  font-style: italic;
+
+  max-width: 55%;
+  text-align: center;
+  margin: 2rem 0rem;
+  line-height: 2;
+}
+
+svg {
+  width: 80px;
+  height: 80px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 70rem;
+  margin: 0 auto;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  padding: 1rem;
+}
+.nav-headings a {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.075em;
+}
+
+i {
+  color: #fff;
+}
+a {
+  padding: 1.5em;
+}
+
+li:hover {
+  background-color: #fff;
+}
+
+a:hover {
+  background-color: #fff;
+  color: #1e252d;
+}
+
+.main-article {
+  margin: 0 auto;
+  width: 70em;
+  background-color: #fff;
+  padding: 5em;
+  padding-bottom: 0;
+}
+
+.main-article article {
+  height: 70em;
+  text-align: center;
+
+  /* display: flex;
+  flex-direction: column; */
+}
+.main-article h2 {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.075em;
+  margin: 1em 0;
+  color: #212931;
+}
+
+article p:nth-child(3) {
+  font-style: italic;
+  text-align: center;
+  margin: 2em 10em;
+  line-height: 2;
+  font-size: 1.2em;
+  margin-top: -50px;
+}
+
+/* CSS */
+button {
+  background-color: #fff;
+  border: 3px solid #212931;
+  color: #212931;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 800;
+  height: 48px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 20px 50px 40px 50px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 3em;
+}
+
+@media (min-width: 768px) {
+  .button-59 {
+    min-width: 170px;
+  }
+}
+footer {
+  display: none;
+  color: #fff;
+}
+
+.article-section {
+  height: 100%;
+  background-color: #fff;
+  width: 70em;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+.child-articles {
+  background-color: #fff;
+  width: 50%;
+  padding: 3em;
+  border: 2px solid #eeeeee;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50em;
+}
+
+.child-articles h2 {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+}
+
+.child-articles img {
+  width: 100%;
+}
+.child-articles p:nth-child(4) {
+  line-height: 2em;
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+.child-articles button {
+  display: block;
+  margin: 0 auto;
+}
+
+.page-foot-nav {
+  background-color: #fff;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.page-foot-nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+}
+.page-foot-nav div {
+  border: 3px solid #eeeeee;
+  padding: 12px 5px;
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    display: none;
+  }
+  svg {
+    display: none;
+  }
+
+  .wrapper {
+    position: relative;
+    top: 25%;
+  }
+
+  .wrapper h1 {
+    font-size: 3.5rem;
+    max-width: 100%;
+  }
+
+  .wrapper p {
+    max-width: 100%;
+  }
+}
