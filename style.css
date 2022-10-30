@@ -5,6 +5,7 @@
 *:after {
   box-sizing: border-box;
   background-color: #f9bf2d;
+  margin:0
 }
 
 h1 {
